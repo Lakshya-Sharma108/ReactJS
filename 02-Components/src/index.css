@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color:rgb(172, 82, 255);
   color: white;
   padding: 16px;
   text-align: center;
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .card {
-  background-color: pink;
+  background-color: rgb(255, 155, 172);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;

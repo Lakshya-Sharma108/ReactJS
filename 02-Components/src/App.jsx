@@ -6,7 +6,14 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <h1>React Components</h1>
+
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
       <Card />
       
     </div>
