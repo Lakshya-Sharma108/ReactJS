@@ -2,11 +2,11 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
+
+    // Fragment or empty tags - It is a common pattern in React to return multiple elements from a component. Fragments let you group a list of children without adding extra nodes to the DOM.
+    <>
       <h1>React App</h1>
-      <p>Welcome to your React app!</p>
-      <h2>Subheading</h2>
-    </div>
+    </>
   )
 }
 
