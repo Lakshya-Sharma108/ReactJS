@@ -1,16 +1,14 @@
 import React from 'react'
 import Card from './components/Card'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <div>
+      <Navbar />
       <h1>React Components</h1>
-      <div className="card">
-        <h2>Card Title</h2>
-        <p>Card content goes here.</p>
-      </div>
-
-      {Card()}
+      <Card />
+      
     </div>
   )
 }
