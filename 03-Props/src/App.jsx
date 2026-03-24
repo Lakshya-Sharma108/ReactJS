@@ -6,7 +6,9 @@ const App = () => {
     <div className='parent'>
       
       {/* Here we are passing props to the Card component -- name, age, description are the props */}
-      <Card name='Lakshaya Awasthi' age={21} description='I am a software engineer, passionate about creating innovative solutions.' />
+      <Card name='Lakshaya Awasthi' age={21} description='I am a software engineer.' />
+      <Card name='Yogesh' age={28} description='I am a AI engineer.' />
+      <Card name='Deependra' age={32} description='I am a fucking asshole.' />
     </div>
   )
 }
