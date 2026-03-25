@@ -7,3 +7,14 @@
   padding: 10px 20px;
   margin: 5px;
 }
+
+.btn{
+  width: fit-content;
+  background-color: orange;
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid white;
+}
