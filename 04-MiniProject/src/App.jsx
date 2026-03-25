@@ -111,9 +111,11 @@ const jobOpenings = [
   return (
     <div className='parent'>
 
-      {jobOpenings.map(function(e){
+      {jobOpenings.map(function(e, idx){
 
-        return <Card company={e.name} logo={e.brandLogo} datePosted={e.datePosted} post={e.post} tag1={e.tag1} tag2={e.tag2} pay={e.pay} location={e.location}/>
+        return <div key={idx}>
+          <Card company={e.name} logo={e.brandLogo} datePosted={e.datePosted} post={e.post} tag1={e.tag1} tag2={e.tag2} pay={e.pay} location={e.location}/>
+        </div>
       })}
     </div>
   )
