@@ -13,6 +13,11 @@ const App = () => {
     console.log('Mouse entered');
   }
 
+  function inputChanging() {
+    console.log('User is typing...');
+    
+  }
+
   return (
     <div>
 
@@ -27,6 +32,11 @@ const App = () => {
         let h1 = document.querySelector('h1')
         h1.textContent = 'For this button, we used a function inside the onClick event handler'
       }}>Click me</button>
+
+
+
+      {/* Input field with onChange event */}
+      <input type="text" onChange={inputChanging} placeholder='Type something...' />
     </div>
   )
 }
