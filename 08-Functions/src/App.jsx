@@ -36,7 +36,9 @@ const App = () => {
 
 
       {/* Input field with onChange event */}
-      <input type="text" onChange={inputChanging} placeholder='Type something...' />
+      <input type="text" onChange={function(e) {
+        console.log(e.target.value);
+      }} placeholder='Type something...' />
     </div>
   )
 }
