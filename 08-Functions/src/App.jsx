@@ -21,6 +21,12 @@ const App = () => {
 
       {/* Button with mouse enter and click events */}
       <button onMouseEnter={mouseEnter} onClick={clickBtn}>Change user</button>
+
+      {/* Function inside button */}
+      <button onClick={() => {
+        let h1 = document.querySelector('h1')
+        h1.textContent = 'For this button, we used a function inside the onClick event handler'
+      }}>Click me</button>
     </div>
   )
 }
