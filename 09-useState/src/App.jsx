@@ -1,20 +1,21 @@
 import React from 'react'
-import { use } from 'react'
-import { useState } from 'react'
 
 const App = () => {
 
-  let [num, setNum] = useState(0)
+  // Can't change the value directly like this, it will not re-render the component because React doesn't know that the value has changed. It will only re-render when the state changes.
+  let a = 20;
+
+  function changeA() {
+    console.log(a);
+    a = 30;
+    console.log(a);
+    
+  }
 
   return (
-
-
-
     <div>
-      <h1>{num}</h1>
-      <button onClick={
-        () => setNum(num + 1)
-      }>Increment</button>
+      <h1>The value of a is : {a}</h1>
+      <button onClick={changeA}>Change value</button>
     </div>
   )
 }
