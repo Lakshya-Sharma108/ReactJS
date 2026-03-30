@@ -11,11 +11,15 @@ const App = () => {
   let [a, setA] = useState(0);
 
   function increaseA() {
-    setA(a+1);
+    setA(a + 1);
   }
 
   function decreaseA() {
-    setA(a-1);
+    setA(a - 1);
+  }
+
+  function jump() {
+    setA(a + 5);
   }
 
   return (
@@ -23,8 +27,9 @@ const App = () => {
       <h1>The value of a is : {a}</h1>
       <div className='btn'>
         <button onClick={increaseA}>Increase value</button>
-      <button onClick={decreaseA}>Decrease value</button>
+        <button onClick={decreaseA}>Decrease value</button>
       </div>
+      <button id='jump' onClick={jump}>Jump by 5</button>
     </div>
   )
 }
