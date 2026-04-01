@@ -4,8 +4,9 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();   // this prevents the default behavior of refreshing the page.
-    console.log('Form submitted!');
+    console.log('Form submitted by: ', title);
 
+    setTitle(''); // this will clear the input field after submission.
   }
 
   // What is two-way binding?
