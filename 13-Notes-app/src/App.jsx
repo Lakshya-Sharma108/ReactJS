@@ -3,21 +3,23 @@ import React from 'react'
 const App = () => {
   return (
     <div className='h-screen bg-black text-white'>
-      <form className='flex flex-col items-start gap-4 p-10'>
+      <form className='flex items-start justify-between p-10'>
 
-        <input
-          type="text"
-          placeholder='Enter Notes Heading'
-          className='px-5 py-2 border-2 rounded w-1/2'
-        />
+        <div className='w-1/2 flex items-start flex-col gap-4'>
+          <input
+            type="text"
+            placeholder='Enter Notes Heading'
+            className='px-5 py-2 border-2 rounded outline-none w-full'
+          />
 
-        <input
-          type="text"
-          placeholder='Write Details'
-          className='px-5 py-2 h-20 border-2 rounded w-1/2'
-        />
+          <textarea
+            type="text"
+            placeholder='Write Details'
+            className='px-5 py-2 h-32 border-2 rounded outline-none w-full'
+          />
 
-        <button className='bg-white text-black px-5 py-2 rounded w-1/2'>Add Notes</button>
+          <button className='bg-white text-black px-5 py-2 rounded outline-none w-full'>Add Notes</button>
+        </div>
 
       </form>
     </div>
