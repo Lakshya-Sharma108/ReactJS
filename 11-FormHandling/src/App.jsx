@@ -2,8 +2,11 @@ import React from 'react'
 
 const App = () => {
 
+
+  // Form submitting has a default behavior of refreshing the page. To prevent this, we can use the preventDefault() method on the event object in the form's onSubmit handler.
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();   // this prevents the default behavior of refreshing the page.
     console.log('Form submitted!');
     
   }
