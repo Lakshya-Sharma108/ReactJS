@@ -12,6 +12,12 @@ const App = () => {
 
     const copyTask = [...task]
 
+    copyTask.push({title, details})
+    setTask(copyTask)
+
+    console.log(copyTask);
+    
+
     setTitle('');
     setDetails('');
   }
@@ -45,7 +51,7 @@ const App = () => {
         />
 
         <button
-          className='bg-white active:bg-gray-400 text-black px-5 py-2 rounded font-medium outline-none w-full'
+          className='bg-white active:scale-95 text-black px-5 py-2 rounded font-medium outline-none w-full'
         > Add Notes
         </button>
 
