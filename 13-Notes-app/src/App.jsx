@@ -1,5 +1,4 @@
 import React, { use, useActionState, useState } from 'react'
-import { X } from 'lucide-react';
 
 const App = () => {
 
@@ -70,7 +69,7 @@ const App = () => {
             return <div key={idx} className='flex justify-between flex-col items-start relative h-50 w-47 rounded-xl pt-8 px-4 pb-4 text-black bg-[url("https://imgs.search.brave.com/pCoCe5YPIJki9c8Eu94uAF4g55o-BawHsAQTImhJCok/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzcv/MTUyLzY3MS9zbWFs/bC9zdGlja3ktbm90/ZS1wYXBlci1iYWNr/Z3JvdW5kLWZyZWUt/cG5nLnBuZw")] bg-cover bg-center'>
               <div>
                 <h3 className='leading-tight text-xl font-bold'>{elem.title}</h3>
-                <p className='mt-2 leading-tight font-medium text-gray-500'>{elem.details}</p>
+                <p className='mt-2 leading-tight text-xs font-semibold text-gray-600'>{elem.details}</p>
               </div>
               <button onClick={()=>{
                 removeNote(idx)
