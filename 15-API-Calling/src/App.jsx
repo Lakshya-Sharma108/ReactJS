@@ -1,5 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+import ImageApi from './components/ImageApi'
+
+
+
 
 const App = () => {
 
@@ -24,7 +28,7 @@ const App = () => {
   // 8. fetch() does not have built-in support for handling errors, while axios has built-in support for handling errors.
 
 
-  
+
 
   // Using fetch method:
   async function getData() {
@@ -47,9 +51,14 @@ const App = () => {
 
   return (
     <div>
+      <center>
+        <h2>Check the console</h2>
       <button onClick={getData}>Get Data  --fetch method</button>
 
       <button onClick={getDataa}>Get Data  --axios library</button>
+      </center>
+
+      <ImageApi />
     </div>
   )
 }
