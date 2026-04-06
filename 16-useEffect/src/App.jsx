@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Example2 from './components/Example2';
 
 const App = () => {
 
@@ -16,20 +17,25 @@ const App = () => {
 
   return (
     <div>
-      <h1>num -- {num}</h1>
-      <h1>num2 -- {num2}</h1>
+      <div className='flex flex-col justify-center items-center gap-3 h-screen w-screen bg-teal-900 text-white text-2xl font-bold'>
+        <h1>num -- {num}</h1>
+        <h1>num2 -- {num2}</h1>
 
-      <button
-        onMouseEnter={
-          () =>{ setnum(num + 1)
-        }}
+        <button className='px-8 py-3 rounded-3xl mt-3 text-black bg-gray-400'
+          onMouseEnter={
+            () => {
+              setnum(num + 1)
+            }}
 
-        onMouseLeave={()=>{
-          setnum2(num2 + 10)
-        }}
-      >
-        Hover
-      </button>
+          onMouseLeave={() => {
+            setnum2(num2 + 10)
+          }}
+        >
+          Hover
+        </button>
+      </div>
+
+      <Example2 />
     </div>
   )
 }
