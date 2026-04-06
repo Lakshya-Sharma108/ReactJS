@@ -14,6 +14,7 @@ const Example2 = () => {
   }
 
   useEffect(() => {
+    aChange();
     console.log('use effect is running...')
   }, [a]);
 
