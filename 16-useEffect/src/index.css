@@ -19,6 +19,7 @@ div{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:rgb(4, 102, 102);
   gap: 5px;
   height: 100%;
   width: 100%;

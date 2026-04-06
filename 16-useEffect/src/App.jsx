@@ -16,8 +16,8 @@ const App = () => {
 
   return (
     <div>
-      <h1>num: {num}</h1>
-      <h1>num2: {num2}</h1>
+      <h1>num -- {num}</h1>
+      <h1>num2 -- {num2}</h1>
 
       <button
         onMouseEnter={
