@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Card from './components/Card';
 
 const App = () => {
 
@@ -24,12 +25,7 @@ const App = () => {
     printUserData = userData.map((elem, idx) => {
 
       return <div key={idx}>
-        <a href={elem.url} target='_blank'>
-          <div className='h-48 w-47 overflow-hidden rounded'>
-            <img className='h-full w-full object-cover' src={elem.download_url} alt="" />
-          </div>
-          <h2 className='font-bold text-lg'>{elem.author}</h2>
-        </a>
+        <Card elem={elem} />
       </div>
     })
   }
