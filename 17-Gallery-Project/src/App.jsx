@@ -18,7 +18,7 @@ const App = () => {
 
 
 
-  let printUserData = <h3 className='text-gray-400 text-xs absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>loading...</h3>
+  let printUserData = <h3 className='text-gray-400 text-xs absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold'>Loading...</h3>
 
   if (userData.length > 0) {
     printUserData = userData.map((elem, idx) => {
@@ -37,8 +37,7 @@ const App = () => {
 
   return (
     <div className='bg-black h-screen overflow-auto p-4 text-white'>
-      <h1>{index}</h1>
-      <div className='flex flex-wrap gap-4 p-2'>
+      <div className='flex h-[82%] flex-wrap gap-4 p-2'>
         {printUserData}
       </div>
 
