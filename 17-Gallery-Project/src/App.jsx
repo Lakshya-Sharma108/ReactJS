@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from './components/Card';
+import Buttons from './components/Buttons';
 
 const App = () => {
 
@@ -37,25 +38,7 @@ const App = () => {
         {printUserData}
       </div>
 
-      <div className='flex justify-center gap-6 items-center p-4'>
-        <button
-          className='bg-amber-400 text-sm cursor-pointer active:scale-95 rounded px-4 py-2 font-semibold'
-          onClick={()=>{
-            if(index > 1){
-              setIndex(index-1)
-              setUserData([])
-            }
-          }}
-        >Prev</button>
-
-        <button
-          className='bg-amber-400 text-sm cursor-pointer active:scale-95 rounded px-4 py-2 font-semibold'
-          onClick={()=>{
-            setUserData([])
-            setIndex(index+1)
-          }}
-        >Next</button>
-      </div>
+      <Buttons index={index} setIndex={setIndex} setUserData={setUserData} />
     </div>
   )
 }
