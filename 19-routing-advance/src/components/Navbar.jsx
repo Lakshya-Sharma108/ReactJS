@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className='flex gap-8'>
         <a className='text-lg font-bold' href="/">Home</a>
         <a className='text-lg font-bold' href="/about">About</a>
-        <a className='text-lg font-bold' href="/contact">Contact</a>
+        <a className='text-lg font-bold' href="/product">Product</a>
       </div>
     </div>
   )
