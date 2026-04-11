@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between py-4 px-8 bg-cyan-900'>
+    <div className='flex justify-between items-center py-4 px-8 bg-cyan-900'>
       <h2 className='text-xl font-bold'>Lakshaya</h2>
       <div className='flex gap-8'>
         <a className='text-lg font-bold' href="/">Home</a>
