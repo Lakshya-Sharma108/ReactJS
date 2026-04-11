@@ -7,6 +7,7 @@ import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Men from './pages/Men'
 import Women from './pages/Women'
+import Kids from './pages/Kids'
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
@@ -17,11 +18,13 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/product' element={<Product />} /> 
+        <Route path='/product' element={<Product />}>
 
         {/* Nestead Routes */}
         <Route path='/product/men' element={<Men />} />
         <Route path='/product/women' element={<Women />} />
+        <Route path='/product/kids' element={<Kids />} />
+        </Route> 
 
         {/* This is for 404 pages which are not exists in our application */}
         <Route path='*' element={<NotFound />} />
